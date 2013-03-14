@@ -1,0 +1,302 @@
+/*
+Theme Name:     Lancaster Photographic Society 
+Theme URI:      http: //lancasterphotographicsociety.org.uk
+Description:    Child theme based on twentyeleven 
+Author:         Christian Cable
+Author URI:     http: //example.com/about/
+Template:       twentyeleven
+Version:        0.1.0
+*/
+
+
+@import url("../twentyeleven/style.css");
+
+
+
+
+/* page background */
+
+body {
+	background: fixed repeat scroll 0 0 #ffffff;
+	
+}
+body {
+    background-attachment: fixed;
+    background-color: #ffffff !important;
+    background-image: url("images/seamless-lica-texture.png");
+    background-position: left top;
+    background-repeat: repeat;
+}
+
+/* colours */
+
+
+/* link colours */
+
+a {
+
+	color: #D3002A;
+}
+
+/* branding background */
+
+#branding {
+	/* taken from the Ultimate CSS gradient tool 
+	
+		http://www.colorzilla.com/gradient-editor/
+	
+	*/
+	
+	background: rgb(237,36,44); /* Old browsers */
+	/* IE9 SVG, needs conditional override of \'filter\' to \'none\' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkMjQyYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iIzhkMGMxMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top,  rgba(237,36,44,1) 0%, rgba(141,12,17,1) 40%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,36,44,1)), color-stop(40%,rgba(141,12,17,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(237,36,44,1) 0%,rgba(141,12,17,1) 40%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(237,36,44,1) 0%,rgba(141,12,17,1) 40%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(237,36,44,1) 0%,rgba(141,12,17,1) 40%); /* IE10+ */
+	background: linear-gradient(top,  rgba(237,36,44,1) 0%,rgba(141,12,17,1) 40%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed242c', endColorstr='#8d0c11',GradientType=0 ); /* IE6-8 */
+
+}
+
+#branding img {
+	border-bottom: 1px solid #fb5555;
+	border-top: 1px solid #6a0f0f;
+}
+
+#branding {
+	border-top: 2px solid #0a0a0a;
+}
+
+
+/* menu */
+
+#access {
+
+	border-bottom: 1px solid #000000;
+
+
+	background: rgb(237,36,44); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkMjQyYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4ZDBjMTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(237,36,44,1) 0%, rgba(141,12,17,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,36,44,1)), color-stop(100%,rgba(141,12,17,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(237,36,44,1) 0%,rgba(141,12,17,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(237,36,44,1) 0%,rgba(141,12,17,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(237,36,44,1) 0%,rgba(141,12,17,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(237,36,44,1) 0%,rgba(141,12,17,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed242c', endColorstr='#8d0c11',GradientType=0 ); /* IE6-8 */
+
+}
+
+#access a {
+	color: #ffffff;
+}
+
+#access {
+	background: -webkit-linear-gradient(#ed242c, #8d0c11) !important;
+}
+
+#access ul ul a {
+	/* color: #000000; */
+	color: #818083;
+}
+
+/* side bar nav */
+
+
+nav#sub-pages .current_page_item > a {
+	color: #000000;
+	
+}
+/* site header */
+
+#site-title {
+	color: #f7f7f7 !important;
+}
+
+#site-title a {
+
+	font-family: 'Lobster', Georgia, Times, "Times New Roman", serif;
+	font-weight: normal;
+	text-shadow: hsl(0,0%,0%) -1px 1px, hsl(0,0%,0%) -2px 2px;
+	color: #f7f7f7 !important;
+	font-size: 2.5em;
+}
+
+#site-title a:active, a:focus, #site-title a:hover {
+	color: #ffffff !important;
+}
+
+.page-title {
+	color: #ed242c;
+}
+
+.widget-title {
+	color: #000000;
+}
+
+.entry-title, .entry-title a {
+	color: #000000;
+}
+
+.entry-title a:active {
+	color: #e4741f !important;
+}
+
+.entry-title {
+	padding-top: 0em;
+}
+
+input#s {
+	color: #D2D2D2;
+}
+
+
+
+#page {
+	background: none repeat scroll 0 0 #ffffff;
+}
+
+.entry-title {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-weight: normal !important;
+}
+
+
+
+/* fixing some colours */
+
+.hentry, .no-results {
+	border-bottom: 1px solid #B5B5B5 !important;
+}
+
+html > body .ngg-album {
+    border: 1px solid #B5B5B5 !important;
+}
+
+/* programme */
+
+dl.programme, .programme dd, .programme dt {
+  padding:0;
+  margin:0
+}
+
+.programme .title {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+dl.programme
+{
+	width: 100%;
+	margin: 1em 0;
+	padding: 0;
+	border-bottom: 1px solid #999;
+}
+
+.programme dt
+{
+	clear: left;
+	float: left;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+	font-weight: bold;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	padding-right:0em;
+}
+
+.programme dd
+{
+	margin: 0;
+	padding: 5px;
+	padding-left:0em;
+	border-top: 1px solid #999;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	padding-left:9em;
+}
+
+.programme dd + dd {
+	padding-left:9em;
+	border: none;
+	font-style:italic;
+}
+
+/* responsive elements */
+
+
+
+@media (max-width: 650px) {
+
+	body {
+		padding: 0 0;
+	}
+	
+	#page {
+		margin: 0em auto;
+	} 
+	
+	img#headerimage { 
+		display:none;
+	}
+	
+	/* let's shift the main menu across two lines at this point to stop it wrapping in that horrible way */
+	
+	div.menu li{
+			width: 33.3333%;	
+			text-align: center;
+	}
+	
+	div.menu {
+			margin: 0 !important;
+	}
+	
+	/* this prevents the sub menus from showing but also they have that stupid double tap still - more thinking required
+	ul.children {
+		display:none;
+	}
+
+	ul.children li {
+		display:none;
+	}
+	
+	*/
+}
+
+
+@media (max-width: 320px) {
+
+	#site-title {
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+	
+	}
+	
+	
+	#site-title a {
+	    font-size: 2.2em;
+	   
+	}
+	
+	#site-description {
+		display: none;
+	}
+	
+	#searchform {
+		display: none;
+	}
+	
+	.entry-title, .entry-header .entry-meta {
+    	padding-right: 0em;
+	}
+	
+	.entry-meta {
+		display:none;
+	}
+	
+
+}

@@ -1,6 +1,6 @@
 <?php
 
-
+/*
 // load header font from google webfonts
 
 function load_fonts() {
@@ -9,5 +9,5 @@ function load_fonts() {
 }
  
 add_action('wp_print_styles', 'load_fonts');
-
+*/
 ?>

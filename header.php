@@ -29,6 +29,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0" />
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
 <title><?php
 	/*
@@ -89,7 +90,7 @@
 			?>
 			<!--  link header image to the gallery rather than the homepage  
 			 <a href="<?php echo esc_url( home_url( '/' ) . get_permalink( 285 ) ); ?>">  -->
-			<a href="<?php echo esc_url( get_permalink( 285 ).'#post-285' ); ?>"> 
+			<a href="<?php echo esc_url( get_permalink( 285 ) ); ?>"> 
 		
 				<?php
 					// The header image

@@ -1,5 +1,5 @@
-lps-wordpress-theme
-===================
+Lancaster Photographic Society Wordpress Theme
+==============================================
 
 A simple Wordpress theme for Lancaster Photographic Society.
 

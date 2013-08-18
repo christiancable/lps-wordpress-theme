@@ -252,21 +252,37 @@ dl.programme
 		margin: 0em auto;
 	} 
 	
+	/* - not required? - 18/08/2013
 	img#headerimage { 
 		display:none;
 	}
+	*/
+
+	#branding img {
+	   display: none;
+	}
+
+
+	
 	
 	/* let's shift the main menu across two lines at this point to stop it wrapping in that horrible way */
 	
-	div.menu li{
+	ul.menu li{
 			width: 33.3333%;	
 			text-align: center;
 	}
 	
-	div.menu {
+	ul.menu {
 			margin: 0 !important;
 	}
 	
+	/* removing spacing at the sides of the nav */
+
+	#access div {
+		margin-left: 0;
+		margin-right: 0;
+
+	}
 	
 }
 

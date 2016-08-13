@@ -3,7 +3,7 @@ Lancaster Photographic Society Wordpress Theme
 
 A simple Wordpress theme for Lancaster Photographic Society.
 
-This is a child theme of *twentyeleven* with additional graphical tweaks and responsive elements.
+This is a child theme of *twentyeleven* with additional tweaks, responsiveness and shortcodes.
 You can see this in use at [Lancaster Photographic Society](http://lancasterphotographicsociety.org.uk/).
 
 ## Dependencies 
